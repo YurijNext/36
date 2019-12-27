@@ -1,0 +1,48 @@
+.header {
+  height: 110px;
+
+  .container {
+    height: 100%;
+  }
+
+  &__nav {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__nav-link {
+    display: flex;
+    align-items: center;
+    @include trs();
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: $sb;
+      color: #252530;
+      margin-right: 16px;
+    }
+
+    img {
+      max-width: 16px;
+      min-width: 16px;
+    }
+  }
+
+  &__nav-logo {
+    img {
+      max-width: 52px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+$breakpoints: (
+  "xsm": 321px,
+  "xs": 376px,
+  "sm": 577px,
+  "md": 769px,
+  "lg": 1025px,
+  "xl": 1320px
+);
+$z-indexes: (
+  'modal': 3,
+  'dropdown': 2,
+  'default': 1,
+  'below': -1,
+);
+
+// Colors
+$green: #95C11F;
+$blue: #004F9F;
+
+$text-accent: #252530;
+$main-text: rgba(43, 48, 61, 0.8);
+$light-text: rgba(68, 72, 79, 0.6);
+
+$light-border: #EAEAEA;
+$bolder-border: #C4C4C4;
+$light-bg: #E6E7E8;
+$lightter-bg: #F7F7F7;
+
+
+$font: 'Open Sans', sans-serif;
+
+$l: 300;
+$n: 400;
+$sb: 600;
+$b: 700;
+
+

@@ -1,0 +1,50 @@
+.s-slider {
+  width: 100%;
+  height: 278px;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.s-slider__box {
+  background-color: $blue;
+  height: 100%;
+}
+
+.top-slider {
+  height: 100%;
+
+  .swiper-wrapper {
+    height: 100%;
+  }
+}
+
+.slide-big {
+  height: 100%;
+}
+
+.slide-big__left {
+  width: 73.56%;
+  height: 100%;
+  background-color: $blue;
+  padding-left: 6.18%;
+  padding-right: 11%;
+  position: relative;
+
+  h1 {
+    font-size: 95px;
+    line-height: 129px;
+    letter-spacing: -0.04em;
+    font-weight: $l;
+    color: #fff;
+  }
+
+  a {
+    display: block;
+    position: absolute;
+    max-width: 200px;
+    right: 0;
+    bottom: 0;
+  }
+}
