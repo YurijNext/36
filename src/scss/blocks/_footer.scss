@@ -1,0 +1,286 @@
+.b-footer {
+  padding-left: 0;
+  padding-right: 0;
+  background: #F7F7F7;
+  .container {
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    padding-top: 48px;
+    padding-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer-logo {
+  max-width: 68px;
+  margin-bottom: 8px;
+}
+
+.b-footer .footer-name {
+  display: flex;
+  margin-bottom: 9px;
+
+  img {
+    margin-right: 8px;
+    object-fit: contain;
+    display: inline-block;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #252530;
+    font-weight: $sb;
+  }
+}
+
+.footer-address {
+  margin-bottom: 37px;
+}
+
+.footer-address span {
+  display: block;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(64, 66, 80, 0.75);
+}
+
+.footer-phone {
+  margin-bottom: 29px;
+}
+
+.footer-phone a {
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(64, 66, 80, 0.75);
+  @include trs();
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg path {
+      @include trs();
+    }
+  }
+
+  a:hover {
+    svg path {
+      fill: #3A5898;
+    }
+  }
+}
+
+.footer-col {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+    padding-top: 20px;
+    max-width: 227px;
+  }
+
+  &:nth-child(1) {
+    max-width: 200px;
+    margin-right: 50px;
+  }
+
+  &:nth-child(2) {
+    max-width: 170px;
+    padding-top: 20px;
+  }
+
+  &:nth-child(3) {
+    max-width: 170px;
+    margin-right: 20px;
+    padding-top: 20px;
+  }
+
+  &:nth-child(4) {
+    max-width: 170px;
+    margin-right: 64px;
+    padding-top: 20px;
+  }
+
+  &:nth-child(3) {
+    max-width: 230px;
+    padding-top: 20px;
+  }
+}
+
+.footer-col__name {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: $sb;
+  color: #252530;
+  margin-bottom: 21px;
+}
+
+.footer-col__list  {
+  margin-bottom: 24px;
+
+  a {
+    font-size: 13px;
+    line-height: 25px;
+    color: rgba(64, 66, 80, 0.75);
+    @include trs();
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid #252530;
+    }
+  }
+}
+
+.b-footer .copy {
+  padding: 0;
+  border-top: none;
+  border-bottom: none;
+  height: 67px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  span {
+    font-size: 11px;
+    line-height: 15px;
+    color: #252530;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .b-footer .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 754px) {
+  .b-footer .container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+
+  .footer-col {
+    margin-bottom: 20px;
+    margin-right: 0 !important;
+  }
+
+
+  .footer-col:nth-child(1) {
+    max-width: 100% !important;
+    margin-right: 0;
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-col {
+    width: 50% !important;
+    max-width: 50% !important;
+  }
+
+}
+
+
+@media only screen and (max-width: 640px) {
+  .b-footer .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .s-title:after, .s-title:before {
+    width: 20%;
+  }
+
+  .footer-col {
+    margin-bottom: 40px;
+    width: 48%;
+    max-width: 48% !important;
+    margin-right: 0 !important;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 530px)  {
+  .footer-col:nth-child(1) {
+    max-width: 100% !important;
+    margin-right: 0;
+    width: 100% !important;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 410px)  {
+  .footer-col {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .drop, .drop-in {
+    position: relative;
+    padding-right: 30px;
+    @include trs();
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  .footer-col:nth-child(1) {
+    margin-bottom: 40px;
+  }
+
+  .footer-col {
+    margin-bottom: 0;
+    padding-top: 0 !important;
+  }
+
+  .footer-col__list {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

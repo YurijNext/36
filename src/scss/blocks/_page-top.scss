@@ -84,13 +84,20 @@
 
     .lang-btn {
       font-size: 14px;
-      line-height: 25px;
+      line-height: 15px;
       color: #FFFFFF;
       opacity: 0.7;
       font-family: $font;
       font-weight: $l;
       text-transform: uppercase;
       color: #fff;
+      cursor: pointer;
+      @include trs();
+
+      &:hover {
+        opacity: 1;
+        font-weight: $sb;
+      }
 
       &--active {
         opacity: 1;
@@ -99,6 +106,40 @@
 
       }
     }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-top .container {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .page-top {
+    height: 55px;
+  }
+
+  .page-top__chevron span {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .page-top {
+    height: 55px;
+  }
+
+  .page-top__chevron span {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 150px;
+  }
+
+  .page-top__search .input-search--visible {
+    width: 120px;
   }
 }
 

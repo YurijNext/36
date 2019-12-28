@@ -27,13 +27,23 @@ $(document).ready(function () {
   });
 
   $('.open-search').on('click', function() {
-    $('.input-search').val('');
-    $('.input-search').toggleClass('input-search--visible');
-    $('.input-search').focus();
+    if($(window).width() < 500 ) {
+      $('.mobile-search').slideDown(200);
+      $('.mobile-search input').val('');
+      $('.mobile-search input').focus();
+    } else {
+      $('.input-search').val('');
+      $('.input-search').toggleClass('input-search--visible');
+      $('.input-search').focus();
+    }
+  });
+
+  $('.btn-close').on('click', function() {
+    $('.mobile-search').slideUp(200);
   });
 
 
-  var banner = new Swiper ('.top-slider', {
+  const banner = new Swiper ('.top-slider', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
@@ -41,11 +51,53 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.big-next',
+      prevEl: '.big-prev',
     },
 
-  })
+  });
+
+  const bannerInner = new Swiper ('.slider-inner', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.inner-next',
+      prevEl: '.inner-prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+  });
+
+
+  $('.drop').on('click', function() {
+      $(this).siblings('.footer-col__list').slideToggle('200');
+  });
+
+  $('.drop-in ').on('click', function() {
+    $(this).children('.footer-col__list').slideToggle('200');
+  });
+
+  $('.hamburger').on('click', function() {
+    $('.category-name').siblings('.dropdown').slideUp('10');
+    $(this).toggleClass('is-active');
+    $('html').toggleClass('no-scroll');
+    $('body').toggleClass('no-scroll');
+    $('.mobile-menu-box').toggleClass('menu-active');
+  });
+
+
+
+  $('.category-name').on('click', function() {
+    $(this).siblings('.dropdown').slideToggle('200');
+    $('.category-name').not($(this)).siblings('.dropdown').slideUp('50');
+  });
 
 
 });

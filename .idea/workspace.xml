@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="469af4ad-2a8d-452f-9b32-ad0571788b7f" name="Default Changelist" comment="" />
+    <list default="true" id="469af4ad-2a8d-452f-9b32-ad0571788b7f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/blocks/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/blocks/_footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/blocks/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/blocks/_header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/blocks/_slider.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/blocks/_slider.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pug/modules/_page.pug" beforeDir="false" afterPath="$PROJECT_DIR$/src/pug/modules/_page.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/_page-top.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/_page-top.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/blocks/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/blocks/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/helpers/_common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/helpers/_common.scss" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +46,11 @@
       <replace>inherit</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VZGoAAShXNBjLm2YEIwEyEVWOs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
@@ -111,11 +127,25 @@
       <workItem from="1569670289425" duration="3805000" />
       <workItem from="1569818732435" duration="1113000" />
       <workItem from="1569825039095" duration="387000" />
-      <workItem from="1577453396221" duration="6992000" />
+      <workItem from="1577453396221" duration="7822000" />
+      <workItem from="1577518093855" duration="30039000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
